@@ -233,7 +233,7 @@ const Apply = () => {
               </div>
             </div>
 
-            <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+            <Button type="submit" className="w-full" size="lg" variant="orange" disabled={isSubmitting}>
               {isSubmitting ? "Submitting..." : "Submit Application"}
             </Button>
 

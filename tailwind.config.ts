@@ -49,6 +49,10 @@ export default {
         },
         "surface-elevated": "hsl(var(--surface-elevated))",
         "text-muted": "hsl(var(--text-muted))",
+        orange: {
+          DEFAULT: "hsl(var(--orange))",
+          foreground: "hsl(var(--orange-foreground))",
+        },
         highlight: {
           DEFAULT: "hsl(var(--highlight))",
           foreground: "hsl(var(--highlight-foreground))",

@@ -38,7 +38,7 @@ const Index = () => {
               Whether it's a personal loan, home loan, or business loan — we're here to guide you every step of the way.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild size="lg" className="min-w-[160px]">
+              <Button asChild size="lg" variant="orange" className="min-w-[160px]">
                 <Link to="/apply">
                   Apply Now
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -72,18 +72,18 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary">
+      <section className="bg-highlight">
         <div className="section-container py-12 md:py-16">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h2 className="text-xl font-bold text-primary-foreground sm:text-2xl">
+              <h2 className="text-xl font-bold text-highlight-foreground sm:text-2xl">
                 Ready to get started?
               </h2>
-              <p className="mt-2 text-primary-foreground/80">
+              <p className="mt-2 text-highlight-foreground/80">
                 Apply now and get a callback within 24 hours.
               </p>
             </div>
-            <Button asChild size="lg" variant="secondary">
+            <Button asChild size="lg" variant="orange">
               <Link to="/apply">Apply for Loan</Link>
             </Button>
           </div>
