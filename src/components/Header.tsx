@@ -22,8 +22,8 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">L</span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-highlight">
+              <span className="text-lg font-bold text-highlight-foreground">L</span>
             </div>
             <span className="text-lg font-semibold text-foreground">LoanAssist</span>
           </Link>
@@ -47,7 +47,7 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button asChild>
+            <Button asChild variant="orange">
               <Link to="/apply">Apply Now</Link>
             </Button>
           </div>
@@ -81,7 +81,7 @@ const Header = () => {
                 </Link>
               ))}
               <div className="mt-3 px-4">
-                <Button asChild className="w-full">
+                <Button asChild variant="orange" className="w-full">
                   <Link to="/apply" onClick={() => setIsMobileMenuOpen(false)}>
                     Apply Now
                   </Link>

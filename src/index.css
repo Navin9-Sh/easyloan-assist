@@ -4,84 +4,93 @@
 
 @layer base {
   :root {
-    /* Professional Finance Color Palette */
+    /* Blue, Green & Orange Finance Palette */
     --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    --foreground: 215 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 215 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 215 30% 15%;
 
-    /* Deep Navy Blue - Trust & Stability */
-    --primary: 215 60% 25%;
+    /* Primary Blue - Trust & Professionalism */
+    --primary: 210 75% 42%;
     --primary-foreground: 0 0% 100%;
 
-    /* Light Blue-Grey for secondary elements */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 215 25% 20%;
+    /* Light grey-blue for secondary */
+    --secondary: 210 25% 96%;
+    --secondary-foreground: 215 30% 20%;
 
     /* Muted greys */
-    --muted: 210 15% 95%;
+    --muted: 210 20% 95%;
     --muted-foreground: 215 15% 45%;
 
-    /* Accent - Subtle blue */
-    --accent: 210 60% 95%;
-    --accent-foreground: 215 60% 25%;
+    /* Green Accent - Growth & Money */
+    --accent: 152 55% 94%;
+    --accent-foreground: 152 60% 30%;
 
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 88%;
-    --input: 210 20% 88%;
-    --ring: 215 60% 25%;
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 210 75% 42%;
 
     --radius: 0.5rem;
 
-    /* Custom tokens for finance site */
-    --surface-elevated: 210 20% 98%;
-    --text-muted: 215 10% 55%;
-    --highlight: 200 75% 45%;
+    /* Custom tokens */
+    --surface-elevated: 152 30% 97%;
+    --text-muted: 215 12% 50%;
+    
+    /* Green for success/highlights */
+    --highlight: 152 55% 38%;
     --highlight-foreground: 0 0% 100%;
-    --success: 145 60% 40%;
+    
+    /* Orange for CTAs and attention */
+    --orange: 28 90% 52%;
+    --orange-foreground: 0 0% 100%;
+    
+    --success: 152 55% 38%;
     --success-foreground: 0 0% 100%;
   }
 
   .dark {
-    --background: 215 25% 10%;
-    --foreground: 210 20% 95%;
+    --background: 215 30% 10%;
+    --foreground: 210 25% 95%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 210 20% 95%;
+    --card: 215 30% 12%;
+    --card-foreground: 210 25% 95%;
 
-    --popover: 215 25% 12%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 215 30% 12%;
+    --popover-foreground: 210 25% 95%;
 
-    --primary: 210 60% 60%;
-    --primary-foreground: 215 25% 10%;
+    --primary: 210 70% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 20% 18%;
-    --secondary-foreground: 210 20% 90%;
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 210 25% 90%;
 
-    --muted: 215 20% 18%;
+    --muted: 215 25% 18%;
     --muted-foreground: 210 15% 60%;
 
-    --accent: 215 20% 20%;
-    --accent-foreground: 210 60% 70%;
+    --accent: 152 40% 20%;
+    --accent-foreground: 152 50% 70%;
 
     --destructive: 0 60% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 22%;
-    --input: 215 20% 22%;
-    --ring: 210 60% 60%;
+    --border: 215 25% 22%;
+    --input: 215 25% 22%;
+    --ring: 210 70% 55%;
 
-    --surface-elevated: 215 25% 14%;
+    --surface-elevated: 152 20% 14%;
     --text-muted: 210 15% 55%;
-    --highlight: 200 70% 55%;
+    --highlight: 152 50% 50%;
     --highlight-foreground: 0 0% 100%;
-    --success: 145 55% 45%;
+    --orange: 28 85% 55%;
+    --orange-foreground: 0 0% 100%;
+    --success: 152 50% 45%;
     --success-foreground: 0 0% 100%;
   }
 }

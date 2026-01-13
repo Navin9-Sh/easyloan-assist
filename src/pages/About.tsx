@@ -34,10 +34,10 @@ const About = () => {
 
           {/* Values */}
           <div className="grid gap-8 md:grid-cols-3 mb-12">
-            <div className="text-center p-6 rounded-xl bg-surface-elevated">
+            <div className="text-center p-6 rounded-xl bg-surface-elevated border border-highlight/20">
               <div className="mb-4 flex justify-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent">
-                  <Heart className="h-6 w-6 text-primary" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-highlight/10">
+                  <Heart className="h-6 w-6 text-highlight" />
                 </div>
               </div>
               <h3 className="text-base font-semibold text-foreground mb-2">Customer First</h3>
@@ -46,9 +46,9 @@ const About = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-surface-elevated">
+            <div className="text-center p-6 rounded-xl bg-surface-elevated border border-primary/20">
               <div className="mb-4 flex justify-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
               </div>
@@ -58,10 +58,10 @@ const About = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-surface-elevated">
+            <div className="text-center p-6 rounded-xl bg-surface-elevated border border-orange/20">
               <div className="mb-4 flex justify-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent">
-                  <Users className="h-6 w-6 text-primary" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange/10">
+                  <Users className="h-6 w-6 text-orange" />
                 </div>
               </div>
               <h3 className="text-base font-semibold text-foreground mb-2">Trust</h3>

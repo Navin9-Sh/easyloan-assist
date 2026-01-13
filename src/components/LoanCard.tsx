@@ -11,8 +11,8 @@ interface LoanCardProps {
 
 const LoanCard = ({ title, description, eligibility, icon: Icon }: LoanCardProps) => {
   return (
-    <div className="group rounded-xl border border-border bg-card p-6 card-shadow transition-all hover:card-shadow-hover hover:border-primary/20">
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent">
+    <div className="group rounded-xl border border-border bg-card p-6 card-shadow transition-all hover:card-shadow-hover hover:border-highlight/30">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
         <Icon className="h-6 w-6 text-primary" />
       </div>
       
@@ -27,14 +27,14 @@ const LoanCard = ({ title, description, eligibility, icon: Icon }: LoanCardProps
         <ul className="space-y-1">
           {eligibility.map((item, index) => (
             <li key={index} className="flex items-start gap-2 text-xs text-muted-foreground">
-              <span className="mt-1.5 h-1 w-1 rounded-full bg-primary flex-shrink-0" />
+              <span className="mt-1.5 h-1 w-1 rounded-full bg-highlight flex-shrink-0" />
               {item}
             </li>
           ))}
         </ul>
       </div>
       
-      <Button asChild variant="outline" className="w-full">
+      <Button asChild variant="orange" className="w-full">
         <Link to="/apply">Apply Now</Link>
       </Button>
     </div>
