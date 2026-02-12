@@ -3,12 +3,19 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "@/hooks/useAuth";
 import MainLayout from "@/layouts/MainLayout";
-import Index from "./pages/Index";
-import Services from "./pages/Services";
-import Apply from "./pages/Apply";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+import Landing from "@/pages/Landing";
+import Auth from "@/pages/Auth";
+import Browse from "@/pages/Browse";
+import ListingDetail from "@/pages/ListingDetail";
+import CreateListing from "@/pages/CreateListing";
+import MyListings from "@/pages/MyListings";
+import Bookmarks from "@/pages/Bookmarks";
+import Profile from "@/pages/Profile";
+import Chat from "@/pages/Chat";
+import Admin from "@/pages/Admin";
+import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -18,15 +25,24 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <MainLayout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/apply" element={<Apply />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </MainLayout>
+        <AuthProvider>
+          <MainLayout>
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/auth" element={<Auth />} />
+              <Route path="/browse" element={<Browse />} />
+              <Route path="/listing/:id" element={<ListingDetail />} />
+              <Route path="/create" element={<CreateListing />} />
+              <Route path="/my-listings" element={<MyListings />} />
+              <Route path="/bookmarks" element={<Bookmarks />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/chat" element={<Chat />} />
+              <Route path="/chat/:conversationId" element={<Chat />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </MainLayout>
+        </AuthProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
